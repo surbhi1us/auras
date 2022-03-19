@@ -1,0 +1,151 @@
+.my-bg-photo {
+  background: url('images/bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.my-bg-photo * {
+  position: relative;
+  z-index: 10;
+}
+
+.my-bg-photo:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .25;
+}
+
+.my-custom-container {
+  max-width: 800px;
+}
+
+.accordion .btn-link:focus {
+  box-shadow: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+ 
+}
+
+.pics_in_a_row {
+  display: flex;
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #d6ecf7;
+}
+
+.container {
+  background: #ffd6d6;
+  margin: 0 auto;
+  padding: 5%;
+  width: 75%;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+.muted {
+  font-style: italic;
+  color: #666;
+}
+
+p, li {
+  line-height: 1.5
+}
+
+li {
+  margin-bottom: 7px;
+}
+
+p + p {
+  margin-top: -7px;
+}
+
+code {
+  background: #eee;
+  padding: 2px 5px;
+  font-size: 90%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 2px;
+}
+
+.pics_in_a_row {
+  margin: 25px 0;
+}
+
+.pics_in_a_row > div:not(:last-child) {
+  margin-right: 2%;
+}
+
+.collapse1{
+  background-image: url('images/white.jpg');
+  background-position: center;
+}
+.collapse2{
+  background-image: url('images/magenta.jpg');
+  background-position: center;
+}
+.collapse3{
+  background-image: url('images/pink.png');
+  background-position: center;
+}
+.collapse4{
+  background-image: url('images/red.jpg');
+  background-position: center;
+}
+.collapse5{
+  background-image: url('images/orange.jpg');
+  background-position: center;
+}
+.collapse6{
+  background-image: url('images/yellow.jpg');
+  background-position: center;
+}
+.collapse7{
+  background-image: url('images/green.jpg');
+  background-position: center;
+}
+.collapse8{
+  background-image: url('images/blue.jpg');
+  background-position: center;
+}
+.collapse9{
+  background-image: url('images/violet.jpg');
+  background-position: center;
+}
+.collapse10{
+  background-image: url('images/turq.jpg');
+  background-position: center;
+}
+.collapse11{
+  background-image: url('images/gold.jpg');
+  background-position: center;
+}
+.container{
+  color: black;
+  align-items: center;
+}
