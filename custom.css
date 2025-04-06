@@ -1,151 +1,55 @@
+/* Background banner */
 .my-bg-photo {
-  background: url('images/bg.jpg') no-repeat;
+  background: url('bg.jpg') no-repeat center center;
   background-size: cover;
-  background-position: center center;
   position: relative;
 }
-
+.my-bg-photo:before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
 .my-bg-photo * {
   position: relative;
-  z-index: 10;
-}
-
-.my-bg-photo:before {
-  content: " ";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #000;
-  opacity: .25;
+  z-index: 2;
 }
 
 .my-custom-container {
   max-width: 800px;
 }
 
-.accordion .btn-link:focus {
-  box-shadow: none;
+/* Accordion background classes */
+.aura-bg {
+  background-size: cover;
+  background-position: center;
 }
+.white { background-image: url('white.jpg'); }
+.magenta { background-image: url('magenta.jpg'); }
+.pink { background-image: url('pink.png'); }
+.red { background-image: url('red.jpg'); }
+.orange { background-image: url('orange.jpg'); }
+.yellow { background-image: url('yellow.jpg'); }
+.green { background-image: url('green.jpg'); }
+.blue { background-image: url('blue.jpg'); }
+.violet { background-image: url('violet.jpg'); }
+.turq { background-image: url('turq.jpg'); }
+.gold { background-image: url('gold.jpg'); }
 
-img {
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
- 
-}
-
-.pics_in_a_row {
-  display: flex;
-}
-
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
+/* General styling */
 body {
-  background: #d6ecf7;
+  background-color: #f0f8ff;
 }
-
-.container {
-  background: #ffd6d6;
-  margin: 0 auto;
-  padding: 5%;
-  width: 75%;
+.card-body {
+  font-weight: bold;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-h1 {
-  margin-top: 0;
+.btn-link {
+  font-size: 1.2rem;
+  text-decoration: none;
 }
-
-h2 {
-  font-weight: normal;
-  font-size: 19px;
-  margin-bottom: 30px;
-}
-
-.muted {
-  font-style: italic;
-  color: #666;
-}
-
-p, li {
-  line-height: 1.5
-}
-
-li {
-  margin-bottom: 7px;
-}
-
-p + p {
-  margin-top: -7px;
-}
-
-code {
-  background: #eee;
-  padding: 2px 5px;
-  font-size: 90%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin: 0 2px;
-}
-
-.pics_in_a_row {
-  margin: 25px 0;
-}
-
-.pics_in_a_row > div:not(:last-child) {
-  margin-right: 2%;
-}
-
-.collapse1{
-  background-image: url('images/white.jpg');
-  background-position: center;
-}
-.collapse2{
-  background-image: url('images/magenta.jpg');
-  background-position: center;
-}
-.collapse3{
-  background-image: url('images/pink.png');
-  background-position: center;
-}
-.collapse4{
-  background-image: url('images/red.jpg');
-  background-position: center;
-}
-.collapse5{
-  background-image: url('images/orange.jpg');
-  background-position: center;
-}
-.collapse6{
-  background-image: url('images/yellow.jpg');
-  background-position: center;
-}
-.collapse7{
-  background-image: url('images/green.jpg');
-  background-position: center;
-}
-.collapse8{
-  background-image: url('images/blue.jpg');
-  background-position: center;
-}
-.collapse9{
-  background-image: url('images/violet.jpg');
-  background-position: center;
-}
-.collapse10{
-  background-image: url('images/turq.jpg');
-  background-position: center;
-}
-.collapse11{
-  background-image: url('images/gold.jpg');
-  background-position: center;
-}
-.container{
-  color: black;
-  align-items: center;
+footer {
+  background: #fff;
 }
